@@ -1,0 +1,16 @@
+title: Digital Marketer
+description: 'I''m a writer and a marketer in the blog of Techy Nickk https://techynickk.com'
+template:
+  repo: digital-marketer-template
+  name: digital-marketer
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
